@@ -15,18 +15,16 @@ public class Ejercicio_1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int [] vector = new int [10];
-        int i;
+        int [] vector = new int [100];
+        int aux = 100;
         
-        for ( i = 0; i < 100; i++) { //  FOR para rellenar un vector
-            vector[i] = i+1;
-        }   
-        System.out.println("Impresión de un vector con los 100 primeros números enteros de forma descendente");  
-       
-        for (i = 99; i >= 0; i--) { //FOR para mostrar un vector
-              System.out.println("[" + vector[i] + "]");
-          }  
-            System.out.println("");
+        for ( int i = 0; i < 100; i++) { //  FOR para rellenar un vector
+            vector[i] = aux;
+            aux--;
+            
+            System.out.println("["+vector[i]+"]");
+        }
     }
     
 }
+ 
