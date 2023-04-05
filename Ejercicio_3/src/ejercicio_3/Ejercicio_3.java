@@ -20,19 +20,26 @@ public class Ejercicio_3 {
         
         for (int i = 0; i < 10; i++) {
             vector[i]=(int)(Math.random()*99999+1);
+            System.out.println(vector[i]);
         }
         
         for(int elemento: vector){
-            if(elemento <= 99999 && elemento >= 10000){
-                cont5++;
-            }else if(elemento <= 9999 && elemento >= 1000){
-                cont4++;
-            }else if(elemento <= 999 && elemento >= 100){
-                cont3++;
-            }else if(elemento <= 99 && elemento >= 10){
-                cont2++;
-            }else{
-                cont1++;
+            switch(String.valueOf(elemento).length()){
+                case 1:
+                    cont1++;
+                    break;
+                case 2:
+                    cont2++;
+                    break;
+                case 3:
+                    cont3++;
+                    break;
+                case 4:
+                    cont4++;
+                    break;
+                case 5:
+                    cont5++;
+                    break;
             }
         }
         
