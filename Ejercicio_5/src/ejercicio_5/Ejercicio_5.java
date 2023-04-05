@@ -6,7 +6,6 @@
 package ejercicio_5;
 
 /**
- *
  * @author Zere
  */
 public class Ejercicio_5 {
